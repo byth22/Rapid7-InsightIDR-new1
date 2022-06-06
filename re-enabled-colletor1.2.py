@@ -1,4 +1,5 @@
 # re-enabled colletor - Kellvin Romano
+# Script para gerar template de e-mail baseado em contas reabilitadas
 
 import requests
 import json
@@ -22,7 +23,7 @@ def check_accountsIds(data):
         cont+=1
 
     #print ("")
-    print ("    Poderiam verificar se a atividade È legÌtima e nos encaminhar o respectivo ticket? Obrigado desde j·.")
+    print ("    Poderiam verificar se a atividade √© leg√≠tima e nos encaminhar o respectivo ticket? Obrigado desde j√°.")
     #print ("")
     print ("Att,")
     print ("[!} --------------------------------------------------------------------------------")
@@ -30,10 +31,10 @@ def check_accountsIds(data):
 
 def data_receive():
     today = date.today()
-    url = 'https://us2.api.insight.rapid7.com/idr/v1/investigations' # <- È necess·rio setar o endpoint do seu paÌs
+    url = 'https://us2.api.insight.rapid7.com/idr/v1/investigations' # <- √© necess√°rio setar o endpoint do seu pa√≠s
 
     headers = {
-        'X-Api-Key': '', # <- È necess·rio setar sua api key
+        'X-Api-Key': '', # <- √© necess√°rio setar sua api key
     }
 
     params = {
@@ -48,10 +49,10 @@ def data_receive():
 def change_toInvestigate(ids):
     print ("[+] Alterando status para \"investigating\"!")
     for i in ids:
-        url = 'https://us2.api.insight.rapid7.com/idr/v1/investigations/'+i+'/status/investigating' # <- È necess·rio setar o endpoint do seu paÌs
+        url = 'https://us2.api.insight.rapid7.com/idr/v1/investigations/'+i+'/status/investigating' # <- √© necess√°rio setar o endpoint do seu pa√≠s
 
         headers = {
-            'X-Api-Key': '', # <- È necess·rio setar sua api key
+            'X-Api-Key': '', # <- √© necess√°rio setar sua api key
         }
 
         r = requests.put(url, headers=headers)

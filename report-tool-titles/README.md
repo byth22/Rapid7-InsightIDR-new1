@@ -3,7 +3,7 @@ Script designed to create a report based on investigation titles generated in a 
 Result:
 ```
 >>> 
- RESTART: C:\Users\Kelvin Almeida\Documents\work\projetos\report-tool\report-tool.py 
+ RESTART: C:\Users\byth22\Documents\work\projetos\report-tool\report-tool.py 
 ('A domain account has failed to authenticate to the same asset excessively.', ' : ', 8)
 ('Custom Alert [Log4j] Tentativa de explorao Log4Shell was triggered for log Events_Akamai in log set Unparsed Data', ' : ', 6)
 ('Custom Alert AD_XXX - Movimentao de Usurio em Grupo was triggered for log Events_ActiveDirectory_XXX in log set Active Directory Admin Activity', ' : ', 1)

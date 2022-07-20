@@ -30,7 +30,7 @@ def check_titles(data):
     return (count_dict)
 
 
-## func para puxar de investigações via api REST
+## func para obter dados de investigações via api REST
 def data_receive():
     today = date.today()
     url = 'https://<seu_país_cloud>.api.insight.rapid7.com/idr/v1/investigations' # <- é necessário setar o endpoint do seu país

@@ -13,7 +13,7 @@ import sys
 def check_titles(data):
     titles = []
     for i in data['data']:
-    ## try-execpt para dicernir entre titulos de custom alerts e titulos de alertas nativos
+    ## try-except para dicernir entre titulos de custom alerts e titulos de alertas nativos
         try:
             #titles.append(i['alerts'][0]['type_description'])
             #print (i['alerts'])
